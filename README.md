@@ -55,18 +55,3 @@ It provides accurate tracking of supplier listings, product assortments, shipmen
 
 ---
 
-## Supply Chain Flow
-
-```mermaid
-flowchart TD
-    A[customer_data] --> B[product]
-    B --> C[sku]
-    C --> D[warehouse]
-    D --> E[driver_detail]
-    A --> F[placed_orders]
-    C --> F[placed_orders]
-    C --> G[supplier]
-    D --> G[supplier]
-    F --> H[logistic]
-    D --> H[logistic]
-    E --> H[logistic]
